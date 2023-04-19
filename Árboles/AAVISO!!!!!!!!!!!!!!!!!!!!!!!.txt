@@ -1,0 +1,4 @@
+Lo primero buenos días;
+Ahora sí, aviso a navegantes, no tengo ni puta idea de si lo que voy a enviar va a meteros un troyano en el ordenador así que dejar que sea Jorge quien lo averigüe.
+Otra cosa, la división en unidades está como la mierda y no sé si compila.
+A resumidas cuentas, versión no definitiva solo quiero ver como funciona
