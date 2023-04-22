@@ -30,6 +30,7 @@ begin
      ELSE
        Insertar (d,e);
     end;
+
 end;
 PROCEDURE BorrarNodo (var a:TArbol; e:TElemento);
 //1º Caso : BorrarHoja-> simplemente te la cargas

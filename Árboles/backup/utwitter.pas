@@ -1,13 +1,5 @@
 unit uTwitter;
 interface
-CONST
-  INI=1;
-  MAX=140;
-TYPE
- tArbol = RECORD
-   i:^TArbol;
-   d:^TArbol;
-  end;
 //Constructoras generadoras
 CrearVacio (var TArbol);
 ConstruirArbolBin (var TArbol; e:TElemento);
@@ -23,81 +15,7 @@ FUNCTION Altura (a:TArbol):integer;
 PROCEDURE Frontera (a:TArbol;var l:Lista);     //lo que está en el límite del árbol.
 //Constructora no generadora
 PROCEDURE Espejo (a:TArbol):TArbol;
-PROCEDURE Insertar (var a:TArbol; e:TElemento);
-PROCEDURE Pertenece (var a:TArbol; e:TElemento);
-PROCEDURE Eliminar (var a:TArbol; e:TElemento);
-
 implementation
-PROCEDURE Eliminar(VAR a: TArbolBin; e: TElemento);
-VAR
-    m: TElemento;
-    aux: TArbolBin;
-BEGIN
-    IF NOT EsArbolVacio(a) THEN
-    BEGIN
-        IF EsIgual(a^.raiz, e) THEN
-        BEGIN
-            aux := a;
-            a := a^.hIzq;
-            Dispose(aux);
-        END
-        ELSE
-        BEGIN
-            IF EsArbolVacio(a^.hIzq) THEN
-            BEGIN
-                aux := a;
-                a := a^.hDer;
-                Dispose(aux);
-            END
-            ELSE
-            BEGIN
-                Minimo(a^.hDer, m);
-                Asignar(m, a^.raiz);
-                Eliminar(a^.hIzq, e);
-            END;
-        END;
-    END
-    ELSE
-    BEGIN
-        IF Menor(e, a^.raiz) THEN
-        BEGIN
-            Eliminar(a^.hIzq, e);
-        END
-        ELSE
-        BEGIN
-            Eliminar(a^.hDer, e);
-        END;
-    END
-END;
-PROCEDURE minimo (a:TArbol; var e:TElemento);
-
-begin
-IF EsHoja (a) THEN
-  Raiz(a,e)
-ELSE
-  HijoIzq (a,i);
-minimo (a,e);
-end;
-
-PROCEDURE Insertar (var a:TArbol; e:TElemento);
-var
-  aux:TArbol;
-  i,d:TArbol;
-  r:TElemento;
-begin
-  IF EsArbolVacio(a) THEN
-    ConstruirArbolBin (a,NIL,e,NIL)//Mejor en vez de NIL pasarle un árbol previamente creado
-  ELSE
-    begin
-    Raiz (a,r);
-  //  HijoDer (a,d);
-  //  HijoIzq (a,i);
-     IF EsMenor (e,r) THEN
-       Insertar (a^.hi,e)
-     ELSE
-       Insertar (a^.hd,e);
-    end;
-end;
 FUNCTION NumNodos (a:TArbol):integer;
 begin
 IF a:=EsArbolVacio THEN
@@ -165,6 +83,34 @@ IF Not EsArbolVacio (a) THEN
     Mostrar(r);
     Recorrido(i);
     Recorrido(d);
+ END;
+END;
+Procedure Recorrido (a:TArbol);  //INORDEN
+var
+r:TElemento;
+begin
+IF Not EsArbolVacio (a) THEN
+ BEGIN
+    Raiz(a,r);
+    HI(a,r);
+    HD(a,r);
+    Recorrido(i);
+    Mostrar(r);
+    Recorrido(d);
+ END;
+END;
+Procedure Recorrido (a:TArbol);  //POSORDEN
+var
+r:TElemento;
+begin
+IF Not EsVacio (a) THEN
+ BEGIN
+    Raiz(a,r);
+    HI(a,r);
+    HD(a,r);
+    Recorrido(i);
+    Recorrido(d);
+    Mostrar(r);
  END;
 END;
 
@@ -280,26 +226,6 @@ begin
   Espejo (id,i);
   ConstruirArbolBin(e,ed,r,ei);
   end;
-end;
-FUNCTION Pertenece (a:TArbol;e:TElemento):Boolean;
-VAR
- r:TElemento;
- i,d:TArbol;
-BEGIN
- Raiz(a,r);
- Hi(a,i);
- Hd(a,d);
- IF EsVacio(a) THEN
-   Pertenece:=FALSE
- ELSE
-   BEGIN
-     IF EsIgual(e,r) THEN
-       Pertenece:=TRUE
-     ELSE IF EsMenor(e,r) THEN
-       Pertence:=Pertenece(i,e)
-     ELSE IF NOT EsMenor(e,r) THEN
-       Pertenece:=Pertenece(d,e);
-   END;
 end;
 END.
 

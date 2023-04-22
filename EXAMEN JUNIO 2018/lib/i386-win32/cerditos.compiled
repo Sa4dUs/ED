@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\i386-win32\fpc.exe" Date="1429737572"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhibq &quot;-FiC:\Users\danie\OneDrive\Escritorio\1º\Estructura de datos\apoyotáctico\repositorioarbol\ED\EXAMEN JUNIO 2018\lib\i386-win32&quot; &quot;-FuC:\Users\danie\OneDrive\Escritorio\1º\Estructura de datos\apoyotáctico\repositorioarbol\ED\EXAMEN JUNIO 2018\&quot; &quot;-FUC:\Users\danie\OneDrive\Escritorio\1º\Estructura de datos\apoyotáctico\repositorioarbol\ED\EXAMEN JUNIO 2018\lib\i386-win32\&quot; &quot;-FEC:\Users\danie\OneDrive\Escritorio\1º\Estructura de datos\apoyotáctico\repositorioarbol\ED\EXAMEN JUNIO 2018\&quot; &quot;-oC:\Users\danie\OneDrive\Escritorio\1º\Estructura de datos\apoyotáctico\repositorioarbol\ED\EXAMEN JUNIO 2018\cerditos.exe&quot; cerditos.lpr"/>
+</CONFIG>
