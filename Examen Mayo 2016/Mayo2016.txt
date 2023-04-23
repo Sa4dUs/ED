@@ -1,0 +1,43 @@
+Ejercicio 1
+En las especificaciones algebraicas existen dos tipos de operaciones; constructoras y observadoras. Las operaciones que devuelven el tipo a definir son operaciones constructoras (Es decir, que en las listas devuelve TLista y en las pilas TPila) y las operaciones que devuelven otro tipo de dato son operaciones observadoras.
+Operaciones Constructoras:
+•	Generadora: sólo con ellas es posible generar cualquier valor del tipo 
+•	No generadora o modificadoras: las que construyen con datos del mismo tipo que el tipo destino.
+Operaciones Selectoras:
+•	Selectoras: las que seleccionan o acceden a partes integrantes del tipo. Cuando estas operaciones no se pueden usar siempre se dicen que son parciales (necesitamos ecuaciones de definitud) por ejemplo en el caso de seleccionar un elemento en una lista vacía.
+•	No selectoras: las que operan con el TAD para extraer otras propiedades.
+¿Qué debe tener una especificación algebraica completa?
+1.	Parámetros Genéricos (TElemento)
+2.	Tipos (TCola, TConjunto…)
+3.	Operaciones (Constructoras y Selectoras)
+4.	Variables (para poder expresar las ecuaciones)
+5.	Ecuaciones de Definitud (Para las operaciones parciales)
+6.	Ecuaciones (Para definir aquellas operaciones que no sean constructoras generadoras; esas no se definen))
+
+Ejercicio 2
+  
+FUNCTION BuscBin3(VAR a:TVector; prim,ult:integer; x:integer): boolean;
+VAR
+nterc:integer;
+BEGIN
+IF (prim>=ult) THEN
+BuscBin3 := (a[ult]=x)
+ELSE BEGIN
+nterc:=(ult-prim+1)DIV 3;
+IF (x<=a[prim+nterc]) THEN
+BuscBin3 := BuscBin3(a,prim,prim+nterc-1,x)
+ELSE IF x<=a[ult-nterc] THEN
+BuscBin3 := BuscBin3(a,prim+nterc+1,ult-nterc-1,x)
+ELSE
+BuscBin3 := BuscBin3(a,ult-nterc+1,ult,x)
+END;
+END;
+
+Esta no estoy seguro
+Complejidad= log3(n); 
+Ejercicio 3
+Misterio-- Calcula el preorden de un Árbol;
+Misterio2--- Calcula el postorden
+
+Ejercicio 4
+No hemos dado grafos todavía
