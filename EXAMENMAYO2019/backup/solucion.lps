@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="solucion.pas"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos Y="11"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ulista.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLista"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="10" Y="31"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="14">
+      <Position>
+        <Filename Value="ulista.pas"/>
+        <Caret Line="26" Column="34"/>
+      </Position>
+      <Position>
+        <Filename Value="solucion.pas"/>
+        <Caret Line="3" Column="12"/>
+      </Position>
+      <Position>
+        <Filename Value="ulista.pas"/>
+        <Caret Line="11" Column="17"/>
+      </Position>
+      <Position>
+        <Filename Value="ulista.pas"/>
+        <Caret Line="4" Column="18"/>
+      </Position>
+      <Position>
+        <Filename Value="ulista.pas"/>
+        <Caret Line="17" Column="7"/>
+      </Position>
+      <Position>
+        <Filename Value="ulista.pas"/>
+        <Caret Line="15" Column="21"/>
+      </Position>
+      <Position>
+        <Filename Value="ulista.pas"/>
+        <Caret Line="25" Column="35"/>
+      </Position>
+      <Position>
+        <Filename Value="ulista.pas"/>
+        <Caret Line="8" Column="5"/>
+      </Position>
+      <Position>
+        <Filename Value="ulista.pas"/>
+        <Caret Line="25" Column="35"/>
+      </Position>
+      <Position>
+        <Filename Value="ulista.pas"/>
+        <Caret Line="10" Column="11"/>
+      </Position>
+      <Position>
+        <Filename Value="ulista.pas"/>
+        <Caret Line="26" Column="18"/>
+      </Position>
+      <Position>
+        <Filename Value="solucion.pas"/>
+        <Caret Line="11" Column="8"/>
+      </Position>
+      <Position>
+        <Filename Value="ulista.pas"/>
+        <Caret Line="22" Column="12"/>
+      </Position>
+      <Position>
+        <Filename Value="ulista.pas"/>
+        <Caret Line="26" Column="25"/>
+      </Position>
+      <Position>
+        <Filename Value="solucion.pas"/>
+        <Caret Line="10" Column="6"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
