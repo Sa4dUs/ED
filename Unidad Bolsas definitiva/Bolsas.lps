@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="Bolsas.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="4" Y="30"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ubolsasj.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uBolsasj"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="144"/>
+        <CursorPos X="5" Y="156"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Unidad Conjuntos definitiva\Conjuntos.lpi"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Unidad Conjuntos definitiva\Conjuntos.lpr"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="34" Y="91"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Unidad Conjuntos definitiva\uconjuntoej.pas"/>
+        <UnitName Value="uConjuntoej"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="9" Y="151"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="7">
+      <Position>
+        <Filename Value="Bolsas.lpr"/>
+        <Caret Line="25" Column="17" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="Bolsas.lpr"/>
+        <Caret Line="3" Column="6"/>
+      </Position>
+      <Position>
+        <Filename Value="ubolsasj.pas"/>
+        <Caret Column="13"/>
+      </Position>
+      <Position>
+        <Filename Value="ubolsasj.pas"/>
+        <Caret Line="17" Column="32"/>
+      </Position>
+      <Position>
+        <Filename Value="ubolsasj.pas"/>
+        <Caret Line="53" Column="22" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="ubolsasj.pas"/>
+        <Caret Line="74" Column="15" TopLine="63"/>
+      </Position>
+      <Position>
+        <Filename Value="ubolsasj.pas"/>
+        <Caret Line="103" Column="22" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="ubolsasj.pas"/>
+        <Caret Line="150" Column="13" TopLine="130"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
