@@ -1,0 +1,9 @@
+UNIT uElemAdy;
+
+INTERFACE
+TYPE
+    TElemAdy = INTEGER;
+
+IMPLEMENTATION
+
+END;
