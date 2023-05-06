@@ -1,0 +1,8 @@
+UNIT uElementoID;
+
+INTERFACE
+TYPE 
+    TElementoID = INTEGER;
+
+IMPLEMENTATION
+END.
