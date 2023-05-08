@@ -1,4 +1,4 @@
-unit UCola;
+unit UCola; //Implementado con Cabecera y final 
 
 {$mode ObjFPC}{$H+}
 
@@ -9,7 +9,7 @@ unit UCola;
 
 interface
 uses
-  Classes, SysUtils,UString;
+  UString;
 type
 TCola= record
 ini:^TNodo;
