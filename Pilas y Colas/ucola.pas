@@ -45,14 +45,13 @@ end;
 Procedure Encolar (var c:Tcola;e:TElemento);
 var
 aux:^TNodo;
-        begin
+begin
            new(aux);
            Asignar(aux^.info,e);
            aux^.ant:=c.fin;
            c.fin^.sig:=aux;
            c.fin:=aux;
            aux^.sig:=nil;
-        end;
 end;
 Procedure Desencolar (var c:Tcola;e:TElemento);
 var
