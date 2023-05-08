@@ -1,12 +1,4 @@
 unit UCola; //Implementado con Cabecera y final 
-
-{$mode ObjFPC}{$H+}
-
-
-
-
-
-
 interface
 uses
   UString;
@@ -25,8 +17,8 @@ end;
 
 Function EsVacia (c:Tcola):boolean;
 Procedure CrearVaciac(var c:Tcola);
-Procedure Encolar (var c:Tcola;e:TElemento);/// Insertar FInal
-Procedure Desencolar (var c:Tcola;e:TElemento); /// Borrar por el principio
+Procedure Encolar (var c:Tcola;e:TElemento);// Insertar FInal
+Procedure Desencolar (var c:Tcola;e:TElemento); // Borrar por el principio
 Function Pertenece (var c:TCola;e:TElemento):boolean;
 Procedure Mostrarc(c:TCola);
 
@@ -78,6 +70,7 @@ while ((aux<>nil) and (comp=false)) do
         comp:=EsIgual(aux^.info,e);
         aux:=aux^.sig;
       end;
+      Pertenece:=comp; //Alex, te faltaba eso
 end;
 Procedure Mostrarc(c:Tcola);
 var
@@ -86,12 +79,9 @@ begin
    aux:=c.ini;
    while aux<>nil do
          begin
-           write(aux^.info);
+           Mostrar(aux^.info);
            aux:=aux^.sig;
          end;
 end;
-
-
-
 end.
 
